@@ -7,4 +7,3 @@ const divisao = d / a;
 const modulo = a % 2;
 
 console.log(`Soma: ${soma}, Subtração: ${subtracao}, Multiplicação: ${multiplicacao}, Divisão: ${divisao} ,Modulo: ${modulo} `);
-|
