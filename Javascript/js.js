@@ -12,7 +12,65 @@ const soma = (a, b) => {
 
 soma(5, 5)
 
-//retorno implicito
-
+//retorno implicito / Variável, função arrow param
 const subtracao =  (k, j) => k - j
 console.log(subtracao(1, 5))
+
+
+function dizOi(algo){
+    return console.log(algo)
+}
+
+dizOi("Eai")
+
+const helloWorld = a => console.log(a)
+helloWorld('Eai Mundão')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
