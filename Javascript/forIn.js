@@ -17,3 +17,5 @@ const eu = {
 for (let attr in eu) {
   console.log(`${attr}: ${eu[attr]}`);
 }
+
+//utilizar para percorrer objetos buscando a chave (atributo)
