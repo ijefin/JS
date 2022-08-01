@@ -18,10 +18,12 @@ const imprimirResultado = function (nota) {
     case 1:
       console.log("Mermão tu se fudeu pra krl");
       break;
+    default:
+        console.log('Cade o baiano?');
   }
 };
 
-imprimirResultado(4);
+imprimirResultado();
 
 const frutas = "Mamões";
 switch (frutas) {
