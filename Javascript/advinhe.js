@@ -8,6 +8,10 @@ console.log(computador(1, 5))
 console.log(verifica(computador(1, 5), jogada(4)))
 
 
+function somaDoisNumeros(num1, num2){
+    return num1 + num2
+}
 
+console.log(somaDoisNumeros(2, 2));
 
-
+console.log('Olá mundo')
