@@ -25,3 +25,6 @@ console.log(soma2(1), soma2(2, 5), soma2(0, 0, 0));
 
 //defina o valor padrão logo pós o parâmetro
 const soma = (a = 1, b = 2, c = 3) => a + b + c;
+
+
+//this lexico, não varia quando a função é arrow.
