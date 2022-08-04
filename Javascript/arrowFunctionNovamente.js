@@ -14,4 +14,19 @@ let ola = function () {
 
 ola = () => "Olá";
 
-ola = _ => "Olá";
+ola = (_) => "Olá";
+
+//conteto léxico para o This, utilizando arrow functions:
+
+function Pessoa() {
+  this.idade = 0;
+
+  setInterval(() => {
+    this.idade++;
+    console.log(this.idade);
+  }, 1000);
+}
+
+new Pessoa();
+
+//utilizando arrow function, o bind do this é realizado de forma automática ( this não varia)
