@@ -30,3 +30,21 @@ function Pessoa() {
 new Pessoa();
 
 //utilizando arrow function, o bind do this é realizado de forma automática ( this não varia)
+
+comparaComOThis(obj);
+let comparaComOThis = function (param) {
+  console.log(this === param);
+};
+
+comparaComOThis(global);
+
+comparaComOThis = comparaComOThis.bind(obj);
+comparaComOThis(global);
+comparaComOThis(obj);
+
+const obj = {};
+let comparaComThisArrow = (param) => console.log(this === param);
+comparaComThisArrow(global);
+
+comparaComThisArrow = comparaComThisArrow.bind(obj);
+comparaComThisArrow(module.exports);
