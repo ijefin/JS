@@ -30,3 +30,8 @@ ferrari.acelerar();
 ferrari.acelerar();
 ferrari.acelerar();
 console.log(ferrari.getVelocidadeAtual());
+
+console.log(typeof Carro);
+console.log(typeof ferrari);
+
+//a função construtora é o meu molde, ( funciona como uma classe em outras langs) e meus métodos são funções.
