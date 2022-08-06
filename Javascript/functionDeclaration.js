@@ -1,7 +1,7 @@
 //function declaration: função declararada explicitamente
 olaMundo();
 /*
-quando eu declaro a função dessa forma, eu consigo acessá-la mesmo antes de ela ser DEFINIDA
+quando eu declaro a função dessa forma, eu consigo acessá-la mesmo antes de ela ser declarada
 
      ***O INTERPRETADOR DE JAVASCRIPT CARREGA TODAS AS FUNÇÕES ANTES DE EXECUTAR O CÓDIGO*** 
 */
