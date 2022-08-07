@@ -2,6 +2,7 @@ function criarProduto(nome, preço) {
   return {
     nome,
     preço,
+    desconto: 0.1,
   };
 }
 
