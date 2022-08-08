@@ -7,8 +7,10 @@ const pessoa = (nome) => {
 const Anna = pessoa("Anna");
 Anna.falar();
 
+
 function Pessoa(nome = "fulano") {
-  this.mostrarNome = () => console.log(`Olá ${nome}`);
+  this.nome = nome;
+  this.mostrarNome = () => console.log(`Olá ${this.nome}`);
 }
 
 const jefferson = new Pessoa("Jefferson");
