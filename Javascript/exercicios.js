@@ -10,11 +10,7 @@ function realizaCalculo(x, y) {
   );
 }
 realizaCalculo(12, 5);
-
-console.log(
-  "===================================================================================================== \n"
-);
-
+console.log("\n");
 // Os triângulos podem ser classificados em 3 tipos quanto ao tamanho de seus lados:
 // Equilátero: Os três lados são iguais. Isósceles: Dois lados iguais. Escaleno: Todos os lados são diferentes.
 // Crie uma função que recebe os comprimentos dos três lados de um triângulo e retorne sua classificação quanto
@@ -26,6 +22,7 @@ function validaTipoDeTriangulo(x, y, z) {
   const podeSerCriado = x + y > z && x + z > y && z + y > x;
 
   if (podeSerCriado && valorVerdadeiro) {
+    console.log("Um triângulo pode ser formado!");
     y === x && x === z
       ? console.log("Triângulo Equilátero")
       : "Não é equilátero pois seus lados não são todos iguals";
@@ -42,4 +39,15 @@ function validaTipoDeTriangulo(x, y, z) {
 
 validaTipoDeTriangulo(4, 4, 5);
 
+console.log("\n");
 
+const exponencial = (a, b) => console.log(a ** b);
+exponencial(15, 20);
+
+
+const Pessoa = {
+
+    nome: 'Anna Luiza',
+    idade: 23,
+    cpf: "125.125.644-80"
+}
