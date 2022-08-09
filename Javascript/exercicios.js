@@ -65,3 +65,33 @@ importante de observar, é o fato que o ponto é utilizado no lugar da vírgula 
 um exercício simples para mostrar dinheiro sempre da forma correta. Desenvolva uma função JavaScript para
 que ela receba um valor como 0.30000000000000004 e retorne R$0,30 (observe a vírgula e o ponto).*/
 
+const converteValorParaReal = (valor) =>
+  console.log(
+    new Intl.NumberFormat("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+    }).format(valor)
+  );
+
+converteValorParaReal(0.30000000000000004);
+
+/* Elabore duas funções que recebem três parâmetros: capital inicial, taxa de juros e tempo de aplicação. A
+primeira função retornará o montante da aplicação financeira sob o regime de juros simples e a segunda
+retornará o valor da aplicação sob o regime de juros compostos.
+*/
+
+function jurosSimples(capitalInicial, taxaDeJuros, tempoDeAplicacao) {
+  const jurosSimples = capitalInicial * taxaDeJuros * tempoDeAplicacao;
+  console.log(`${jurosSimples}`);
+}
+
+jurosSimples(1000, 0.1, 0.5)
+
+function jurosComposto(
+  capitalInicial = 0,
+  taxaDeJuros = 0,
+  tempoDeAplicacao = 0
+) {
+  const jurosComposto = capitalInicial * (1 + taxaDeJuros) ** tempoDeAplicacao;
+  console.log(jurosComposto);
+}
