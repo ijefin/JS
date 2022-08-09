@@ -43,11 +43,3 @@ console.log("\n");
 
 const exponencial = (a, b) => console.log(a ** b);
 exponencial(15, 20);
-
-
-const Pessoa = {
-
-    nome: 'Anna Luiza',
-    idade: 23,
-    cpf: "125.125.644-80"
-}
