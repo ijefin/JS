@@ -119,3 +119,7 @@ function baskhara(a, b, c) {
   }
 }
 baskhara(3, -15, 12);
+
+//One more exercice
+
+const boraDeMaisUm = 10;
