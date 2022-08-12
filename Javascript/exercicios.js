@@ -132,25 +132,50 @@ String: “10 20 20 8 25 3 0 30 1”
 Retorno: [3, 7] (Significa que ele bateu três vezes seu recorde de melhor pontuação e a pior pontuação
 aconteceu no sétimo jogo.)*/
 
-let stringPontuacoes = "30, 40, 20, 4, 51, 25, 42, 38, 56, 0"
- 
-function avaliaPontuacoes (stringPontuacoes) {
-    let pontuacoes = stringPontuacoes.split(", ")
-    let qtdQuebraDeRecords = 0
-    let piorJogo = 1
-    let maiorPontuacao = pontuacoes[0]
-    let menorPontuacao = pontuacoes[0]
+let stringPontuacoes = "30, 40, 20, 4, 51, 25, 42, 38, 56, 0";
 
-    for (let i = 1; i < pontuacoes.length; i++) {
-        if(pontuacoes[i] > maiorPontuacao) {
-            maiorPontuacao = pontuacoes[i]
-            qtdQuebraDeRecords++
-        }else if (pontuacoes[i] < menorPontuacao) {
-            menorPontuacao = pontuacoes[i]
-            piorJogo = i+1;
-        }
+function avaliaPontuacoes(stringPontuacoes) {
+  let pontuacoes = stringPontuacoes.split(", ");
+  let qtdQuebraDeRecords = 0;
+  let piorJogo = 1;
+  let maiorPontuacao = pontuacoes[0];
+  let menorPontuacao = pontuacoes[0];
+
+  for (let i = 1; i < pontuacoes.length; i++) {
+    if (pontuacoes[i] > maiorPontuacao) {
+      maiorPontuacao = pontuacoes[i];
+      qtdQuebraDeRecords++;
+    } else if (pontuacoes[i] < menorPontuacao) {
+      menorPontuacao = pontuacoes[i];
+      piorJogo = i + 1;
     }
-    return [qtdQuebraDeRecords, piorJogo]
+  }
+  return [qtdQuebraDeRecords, piorJogo];
 }
- 
-console.log(avaliaPontuacoes(stringPontuacoes))
+
+console.log(avaliaPontuacoes(stringPontuacoes));
+
+/* ) Construa uma função para um sistema de notas de uma instituição que possui a seguinte política de
+classificação: Todo aluno recebe uma nota de 0 a 100. Alunos com nota abaixo de 40 são reprovados. As notas
+possuem a seguinte regra de arredondamento: Se a diferença entre a nota e o próximo múltiplo de 5 for menor
+que 3, arredondar a nota para esse próximo múltiplo de 5. Se a nota for abaixo de 38, não é feito nenhum
+arredondamento pois esta nota resulta na reprovação do aluno. Por exemplo, a nota 84 será arredondada para
+85, mas a nota 29 não será arredondada por ser abaixo de 40 e não ser possível arredondamento eficiente, ou
+seja, que evite a reprovação do aluno. No caso de a nota ser 38, o arredondamento é possível pois atingirá 40
+e o aluno será aprovado.
+*/
+
+//let deve ser definido somente no escopo {}
+let nome = 'Daniel'
+
+const Jeff = new Personagem("Tartaruga Gemeno", nivelInicial + 10);
+Jeff.aumentaNivel();
+console.log(Jeff);
+
+//var é mutavel, let também, const não pode ser alterado.
+console.log(nome);
+nome = "jefferson";
+console.log(nome);
+
+const alteraNome = () => (nome = "carlos");
+console.log(alteraNome());
