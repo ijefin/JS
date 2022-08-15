@@ -165,17 +165,29 @@ seja, que evite a reprovação do aluno. No caso de a nota ser 38, o arredondame
 e o aluno será aprovado.
 */
 
-//let deve ser definido somente no escopo {}
-let nome = 'Daniel'
+function verificaNumero(num) {
+  return num % 3 == 0 ? true : false;
+}
 
-const Jeff = new Personagem("Tartaruga Gemeno", nivelInicial + 10);
-Jeff.aumentaNivel();
-console.log(Jeff);
+console.log(verificaNumero(3));
 
-//var é mutavel, let também, const não pode ser alterado.
-console.log(nome);
-nome = "jefferson";
-console.log(nome);
+/*) As regras para o cálculo dos anos bissextos são as seguintes:
+De 4 em 4 anos é ano bissexto;
+De 100 em 100 anos não é ano bissexto;
+De 400 em 400 anos é ano bissexto;
+Prevalecem as últimas regras sobre as primeiras.
+Partindo daí elabore uma função que recebe um ano e calcula se ele é ano bissexto, imprimindo no console a
+mensagem e retornando true ou false.*/
 
-const alteraNome = () => (nome = "carlos");
-console.log(alteraNome());
+const converteBoolean = {
+  true: "Sim, é bissexto",
+  false: "Não é Bissexto",
+};
+
+function bissexto(num) {
+  return num % 4 === 0 ? converteBoolean.true : converteBoolean.false;
+}
+
+console.log(bissexto(2004));
+console.log(2004 / 4);
+console.log(2004 % 4);
