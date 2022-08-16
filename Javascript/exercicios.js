@@ -165,6 +165,30 @@ seja, que evite a reprovação do aluno. No caso de a nota ser 38, o arredondame
 e o aluno será aprovado.
 */
 
+function classificaAluno(nota) {
+  let notaCorrigida = arredondar(nota);
+  if (notaCorrigida >= 40) {
+    console.log(`Aprovado com nota ${notaCorrigida}`);
+  } else {
+    console.log(`Reprovado com nota ${notaCorrigida}`);
+  }
+}
+
+function arredondar(nota) {
+  if (nota % 5 > 2) {
+    return nota + (5 - (nota % 5));
+  } else {
+    return nota;
+  }
+}
+
+classificaAluno(100);
+classificaAluno(30);
+classificaAluno(38);
+classificaAluno(88);
+classificaAluno(61);
+
+//verifica se o numero é divisível por 3
 function verificaNumero(num) {
   return num % 3 == 0 ? true : false;
 }
@@ -191,3 +215,11 @@ function bissexto(num) {
 console.log(bissexto(2004));
 console.log(2004 / 4);
 console.log(2004 % 4);
+
+function calculaFatorial(num) {
+  for (let i = num; i > 1; i--) {
+    console.log(i);
+  }
+}
+
+calculaFatorial(10);
