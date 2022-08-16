@@ -217,9 +217,11 @@ console.log(2004 / 4);
 console.log(2004 % 4);
 
 function calculaFatorial(num) {
-  for (let i = num; i > 1; i--) {
+  let i = num;
+  while (i >= 1) {
     console.log(i);
+    i--;
   }
 }
 
-calculaFatorial(10);
+calculaFatorial(5);
