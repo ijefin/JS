@@ -282,3 +282,40 @@ function frutas(fruta) {
 }
 
 frutas("melancia");
+
+// Um homem decidiu ir à uma revenda comprar um carro. Ele deseja comprar um carro hatch, e a revenda
+// possui, além de carros hatch, sedans, motocicletas e caminhonetes. Utilizando uma estrutura switch, caso o
+// comprador queira o hatch, retorne: “Compra efetuada com sucesso”. Nas outras opções, retorne: “Tem certeza
+// que não prefere este modelo?”. Caso seja especificado um modelo que não está disponível, retorne no console:
+// “Não trabalhamos com este tipo de automóvel aqui”.
+
+function retornaVeiculo(veiculos) {
+  const garagemDeVeiculos = {
+    sedan: "BMW".toLowerCase(),
+    hatch: "AUDI A12 2026".toLowerCase(),
+    suv: "PORSCHE 911 SUV V12".toLowerCase(),
+    motocicleta: "CB 650f".toLowerCase(),
+  };
+  const { sedan, hatch, suv, motocicleta } = garagemDeVeiculos;
+  switch (veiculos) {
+    case sedan:
+      console.log("BW320, uma belezura de carro! Deseja levá-lo?");
+      break;
+    case hatch:
+      console.log("Uma máquina, um monstro do asfalto! Adquira-o agora!");
+      break;
+    case suv:
+      console.log("Um monstro OffRoad, vamos preencher os papeis?");
+      break;
+    case motocicleta:
+      console.log("Essa aqui é um Imã de buceta irmão!");
+      break;
+    default:
+      console.log("Vamos selecionar um veículo?");
+  }
+}
+
+retornaVeiculo("cb 650f");
+// function converteParaLowerCase(objParaConverter){
+//   objParaConverter
+// }
