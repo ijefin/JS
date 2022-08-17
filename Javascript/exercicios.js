@@ -225,3 +225,25 @@ function fatorial(numero) {
 console.log(fatorial(5));
 
 fatorial(5);
+
+// ) Crie um programa que exibe se um dia é dia útil, fim de semana ou dia inválido dado o número referente ao
+// dia. Considere que domingo é o dia 1 e sábado é o dia 7. Utilize a estrutura Switch.
+
+function diaUtil(dia) {
+  switch (dia) {
+    case 1:
+    case 2:
+      console.log("Não útil");
+      break;
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      console.log("É um Dia útil");
+      break;
+    default:
+      console.log("Insira uma data válida");
+  }
+}
+
+diaUtil(5);
