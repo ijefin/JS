@@ -247,3 +247,38 @@ function diaUtil(dia) {
 }
 
 diaUtil(5);
+
+// Crie uma estrutura condicional switch que receba uma string com o nome de uma fruta e que possua três
+// casos: Caso maçã, retorne no console: “Não vendemos esta fruta aqui”. Caso kiwi, retorne: “Estamos com
+// escassez de kiwis”. Caso melancia, retorne: “Aqui está, são 3 reais o quilo”. Teste com estas três opções .Crie
+// também um default, que retornará uma mensagem de erro no console.
+
+function frutas(fruta) {
+  const cestoDeFrutas = {
+    maca: "Maçã".toLocaleLowerCase(),
+    kiwi: "Kiwi".toLocaleLowerCase(),
+    melancia: "Melancia".toLocaleLowerCase(),
+  };
+  const { maca, kiwi, melancia } = cestoDeFrutas;
+  switch (fruta) {
+    case maca:
+      console.log(
+        "Temos as melhores maçãs da região! Argentina, Nacionais e importadas =), aproveite!"
+      );
+      break;
+    case kiwi:
+      console.log(
+        "Oooh, o complemento perfeito para o Açaí!, vou te ajudar a selecionar os melhores da banca!"
+      );
+      break;
+    case melancia:
+      console.log("Grauda e deliciosa! Vamos levar 5 por 10?");
+      break;
+    default:
+      console.log(
+        `Ops, parece que você encomendou um produto que ainda não possuímos. Temos disponível os produtos ${maca}, ${kiwi} e ${melancia}.`
+      );
+  }
+}
+
+frutas("melancia");
