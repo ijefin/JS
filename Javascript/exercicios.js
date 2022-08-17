@@ -213,15 +213,15 @@ function bissexto(num) {
 }
 
 console.log(bissexto(2004));
-console.log(2004 / 4);
-console.log(2004 % 4);
 
-function calculaFatorial(num) {
-  let i = num;
-  while (i >= 1) {
-    console.log(i);
-    i--;
+function fatorial(numero) {
+  if (numero == 0) {
+    return 1;
+  } else {
+    return numero * fatorial(numero - 1);
   }
 }
 
-calculaFatorial(5);
+console.log(fatorial(5));
+
+fatorial(5);
