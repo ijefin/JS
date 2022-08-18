@@ -429,3 +429,65 @@ function porExtenso(num) {
 
 porExtenso(10);
 
+
+const cardapio = {
+  cachorroQuente: {
+    codigo: 100,
+    valor: 3.00
+  },
+  hambugeres: {
+    comum: {
+      codigo: 200,
+      valor: 4.00,
+    },
+    cheesburguer:{
+      codigo: 300,
+      valor: 5.50
+    },
+  },
+  bauru: {
+    codigo: 400,
+    valor: 7.5
+  },
+  bebidas: {
+    refrigerantes: {
+      pepsi: {
+        valor: 3.50,
+        codigo: 500
+      },
+      cocaCola: {
+        valor: 4.50,
+        codigo: 500
+      },
+      sucos: {
+        valor: 6.00,
+        codigo: 600
+      }
+    }
+  }
+}
+
+function lanchonete(codigo, quantidade) {
+  switch (codigo) {
+    case 100:
+      console.log(`${}`);
+      break;
+    case 200:
+      console.log("");
+      break;
+    case 300:
+      console.log("");
+      break;
+    case 400:
+      console.log("");
+      break;
+    case 500:
+      console.log("");
+      break;
+    case 600:
+      console.log("");
+      break;
+    default:
+      console.log("Produto Inexistente!");
+  }
+}
