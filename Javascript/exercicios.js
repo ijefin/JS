@@ -345,3 +345,87 @@ function calculadora(operador1, operando, operador2) {
 }
 
 calculadora(1, "+", 5);
+
+// Um funcionário irá receber um aumento de acordo com o seu plano de
+// trabalho, de acordo com a tabela abaixo:
+// Plano Aumento
+// A 10%
+// B 15%
+// C 20%
+
+function bonificacao(funcao, salario) {
+  let opt = {
+    a: "A",
+    b: "B",
+    c: "C",
+    aumentos: {
+      dez: 0.1,
+      quinze: 0.15,
+      vinte: 0.2,
+    },
+  };
+
+  const {
+    a,
+    b,
+    c,
+    aumentos: { dez, quinze, vinte },
+  } = opt;
+  switch (funcao) {
+    case a:
+      console.log(salario * dez + salario);
+      break;
+    case b:
+      console.log(salario * quinze + salario);
+      break;
+    case c:
+      console.log(salario * vinte + salario);
+      break;
+    default:
+      console.log("Função inválida! Insira uma função existente! (A, B, C)");
+  }
+}
+
+bonificacao("C", 2900);
+
+console.log(2900 * 0.2 + 2900);
+
+function porExtenso(num) {
+  switch (num) {
+    case 1:
+      console.log("Um");
+      break;
+    case 2:
+      console.log("Dois");
+      break;
+    case 3:
+      console.log("Três");
+      break;
+    case 4:
+      console.log("Qautro");
+      break;
+    case 5:
+      console.log("Cinco");
+      break;
+    case 6:
+      console.log("Seis");
+      break;
+    case 7:
+      console.log("Sete");
+      break;
+    case 8:
+      console.log("Oito");
+      break;
+    case 9:
+      console.log("Nove");
+      break;
+    case 10:
+      console.log("Dez");
+      break;
+    default:
+      console.log("Número fora do intervalo.");
+  }
+}
+
+porExtenso(10);
+
