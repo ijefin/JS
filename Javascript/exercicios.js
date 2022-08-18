@@ -429,70 +429,130 @@ function porExtenso(num) {
 
 porExtenso(10);
 
-
 const cardapio = {
   cachorroQuente: {
     idCachorroQuente: 100,
-    valor: 3.00
+    valorCachorroQuente: 3.23,
   },
   hambugueres: {
     comum: {
       idHamburguer: 200,
-      valor: 4.00,
+      valorHamburguer: 4.0,
     },
-    cheesburguer:{
+    cheesburguer: {
       idCheesburguer: 300,
-      valor: 5.50
+      valorCheesburguer: 5.5,
     },
   },
   bauru: {
     idBauru: 400,
-    valor: 7.5
+    valorBauru: 7.5,
   },
   bebidas: {
     refrigerantes: {
-      pepsi: {
-        idPepsi: 500,
-        valor: 3.50
-      },
-      cocaCola: {
-        idCocaCola: 500,
-        valor: 4.50
+      idRefrigerante: 500,
+      sabor: {
+        cocaCola: "Coca-Cola",
+        pepsi: "Pepsi",
+        guarana: "Guaraná",
       },
       sucos: {
         idSucos: 600,
-        valor: 6.00,
+        valorSuco: 6.0,
         sabor: {
-          1: "Uva",
-          2: "Laranja",
-          3: "Pêssego"
+          uva: "Uva",
+          laranja: "Laranja",
+          pessego: "Pêssego",
         },
-      }
-    } 
-  }
-}
+      },
+    },
+  },
+};
 
-function lanchonete(codigo, quantidade) {
+const {
+  cachorroQuente: { idCachorroQuente, valorCachorroQuente },
+  hambugueres: {
+    comum: { idHamburguer, valorHamburguer },
+    cheesburguer: { idCheesburguer, valorCheesburguer },
+  },
+  bauru: { idBauru, valorBauru },
+  bebidas: {
+    refrigerantes: {
+      pepsi: { idPepsi, valorPepsi },
+      cocaCola: { idCocaCola, valorCoca },
+      sucos: {
+        idSucos,
+        valorSuco,
+        sabor: { uva, laranja, pessego },
+      },
+    },
+  },
+} = cardapio;
+
+function lanchonete(codigo, quantidade, saborSuco) {
+  function formataValor(valorItem, quantidadeItem) {
+    let totalNota = valorItem * quantidadeItem;
+    return new Intl.NumberFormat("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+    }).format(totalNota.toFixed(2));
+  }
+
   switch (codigo) {
     case 100:
-      console.log(`${}`);
+      console.log(
+        `${quantidade} Cachorro(s) Quente, Total: ${formataValor(
+          valorCachorroQuente,
+          quantidade
+        )}`
+      );
       break;
     case 200:
-      console.log("");
+      console.log(
+        `${quantidade} Hamburguer(es). Total: ${formataValor(
+          valorHamburguer,
+          quantidade
+        )}`
+      );
       break;
     case 300:
-      console.log("");
+      console.log(
+        `${quantidade} Cheesburguer(s). Total: ${formataValor(
+          valorCheesburguer,
+          quantidade
+        )}`
+      );
       break;
     case 400:
-      console.log("");
-      break;
-    case 500:
-      console.log("");
+      console.log(
+        `${quantidade}, Bauru(s). ${formataValor(valorBauru, quantidade)}`
+      );
       break;
     case 600:
-      console.log("");
+      switch (saborSuco) {
+        case laranja:
+          console.log(`Preparando suco de ${saborSuco}!`);
+          break;
+        case uva:
+          console.log(`Preparando suco de ${uva}!`);
+          break;
+        case pessego:
+          console.log(`Preparando suco de ${pessego}!`);
+          break;
+        default:
+          console.log(
+            `Sabor não disponível. Disponiveis: ${(uva, pessego, laranja)}`
+          );
+      }
+      console.log(
+        `${quantidade} suco(s) de ${saborSuco}. Total: ${formataValor(
+          valorSuco,
+          quantidade
+        )}`
+      );
       break;
     default:
       console.log("Produto Inexistente!");
   }
 }
+lanchonete(600, 8, "Laranja");
