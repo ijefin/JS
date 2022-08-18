@@ -478,8 +478,6 @@ const {
   bauru: { idBauru, valorBauru },
   bebidas: {
     refrigerantes: {
-      pepsi: { idPepsi, valorPepsi },
-      cocaCola: { idCocaCola, valorCoca },
       sucos: {
         idSucos,
         valorSuco,
