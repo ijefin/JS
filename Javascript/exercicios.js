@@ -432,38 +432,43 @@ porExtenso(10);
 
 const cardapio = {
   cachorroQuente: {
-    codigo: 100,
+    idCachorroQuente: 100,
     valor: 3.00
   },
-  hambugeres: {
+  hambugueres: {
     comum: {
-      codigo: 200,
+      idHamburguer: 200,
       valor: 4.00,
     },
     cheesburguer:{
-      codigo: 300,
+      idCheesburguer: 300,
       valor: 5.50
     },
   },
   bauru: {
-    codigo: 400,
+    idBauru: 400,
     valor: 7.5
   },
   bebidas: {
     refrigerantes: {
       pepsi: {
-        valor: 3.50,
-        codigo: 500
+        idPepsi: 500,
+        valor: 3.50
       },
       cocaCola: {
-        valor: 4.50,
-        codigo: 500
+        idCocaCola: 500,
+        valor: 4.50
       },
       sucos: {
+        idSucos: 600,
         valor: 6.00,
-        codigo: 600
+        sabor: {
+          1: "Uva",
+          2: "Laranja",
+          3: "Pêssego"
+        },
       }
-    }
+    } 
   }
 }
 
