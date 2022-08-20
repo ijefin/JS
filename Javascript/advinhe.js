@@ -15,6 +15,3 @@ function somaDoisNumeros(num1, num2){
 console.log(somaDoisNumeros(2, 2));
 
 console.log('Olá mundo')
-console.log('Olá mundo')
-console.log('Olá mundo')
-console.log('Olá mundo')
