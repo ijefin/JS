@@ -57,3 +57,5 @@ console.log(filha);
 
 //uma função famosa que retorna objeto
 const fromJson = JSON.parse('{"info": "Im a JSON!"}');
+
+ 
