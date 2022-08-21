@@ -14,3 +14,34 @@ produto.preco = 220;
 produto.dataDeRecebimento = new Date();
 
 console.log(produto);
+
+// consigo incluir dinamicamente um atributo ao objeto utilizando notação ponto, mesmo que o mesmo não exista, e da mesma forma, consigo deletar.
+
+delete produto.preco;
+
+delete produto["Marca do produto"];
+
+console.log(produto);
+
+const carro = {
+  modelo: "A4",
+  valor: 89000,
+  proprietario: {
+    nome: "Jeff",
+    idade: 24,
+    endereco: {
+      logradouro: "Rua àgua comprida",
+      numero: 277,
+    },
+    condutores: [
+      {
+        nome: "Anna",
+        idade: 23,
+      },
+      {
+        nome: "Paulina",
+        idade: 62,
+      },
+    ],
+  },
+};
