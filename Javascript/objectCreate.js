@@ -28,3 +28,9 @@ console.log(
   p1.preco +
     ", porque sou um atributo privado, e pertenço somente ao escopo da função"
 );
+
+const p2 = new Produto("Lapiseira", 5.45, 0.1);
+
+console.log(p2.getPrecoComDesconto());
+console.log(p1.nome);
+console.log(p2.preco, p2.desconto + ", Porque também sou privado.");
