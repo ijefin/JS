@@ -44,6 +44,23 @@ const carro = {
       },
     ],
   },
+  calculaValorSeguro: (a) => {
+    a;
+  },
 };
 
 console.log(carro);
+carro.proprietario.endereco.numero = 1000;
+carro["proprietario"]["endereco"]["logradouro"] = "Av Gigante";
+
+console.log(carro);
+
+delete carro.condutores;
+delete carro.proprietario;
+console.log(carro);
+
+//prestar atenção ao acessar um elemento encadeado. como o OBJ carro existe, é possível acessar qualquer coisa dentro de carro, mesmo que não exista.
+//quando o mesmo não existir, o retorno será undefined
+console.log(carro.condutores);
+//porém ao tentar acessar algo que está indefinido, um erro é disparado
+console.log(carro.condutores.lenght);
