@@ -34,3 +34,26 @@ const p2 = new Produto("Lapiseira", 5.45, 0.1);
 console.log(p2.getPrecoComDesconto());
 console.log(p1.nome);
 console.log(p2.preco, p2.desconto + ", Porque também sou privado.");
+
+function criarFuncionario(nome, salarioBase, faltas) {
+  return {
+    nome,
+    salarioBase,
+    faltas,
+    getSalario() {
+      return (salarioBase / 22) * (22 - faltas);
+    },
+  };
+}
+
+const jefferson = criarFuncionario("Jefferson", 7980, 4);
+const anna = criarFuncionario("Maria", 11400, 1);
+console.log(jefferson.getSalario(), anna.getSalario());
+
+//object.create
+const filha = Object.create(null);
+filha.nome = "Anna";
+console.log(filha);
+
+//uma função famosa que retorna objeto
+const fromJson = JSON.parse('{"info": "Im a JSON!"}');
