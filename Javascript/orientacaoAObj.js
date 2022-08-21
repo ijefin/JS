@@ -10,3 +10,7 @@ produto.nome = "Cadeira";
 
 //e também como um array, sendo o que está dentro do array a chave
 produto["Marca do produto"] = "Generica";
+produto.preco = 220;
+produto.dataDeRecebimento = new Date();
+
+console.log(produto);
