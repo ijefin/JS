@@ -45,3 +45,5 @@ const carro = {
     ],
   },
 };
+
+console.log(carro);
