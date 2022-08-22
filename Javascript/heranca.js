@@ -17,3 +17,11 @@ console.log(filho.atributo1);
 
 //Caso um atributo seja encontrado dentro do próprio objeto, ele não o buscará em uma cadeia de prototipos.
 console.log(filho.atributo3);
+
+const carro = {
+  velAtual: 0,
+  velMax: 200,
+  acelerarMais(delta){
+    
+  }
+};
