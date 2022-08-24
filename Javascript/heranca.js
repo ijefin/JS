@@ -24,7 +24,3 @@ const carro = {
   acelerarMais(delta) {},
 };
 
-const lol = {
-  personagens: 165,
-  tudoRoubado: "Só na mão dos outros!",
-};
