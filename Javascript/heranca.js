@@ -5,7 +5,7 @@ Object.prototype.GlobalAtribute = "Eu sou o global.";
 const avo = { atributo1: "A" };
 const pai = { __proto__: avo, atributo2: "B" };
 const filho = { __proto__: pai, atributo3: "C" };
-// __proto__ consegue herdar os atributos do qual o objeto foi definido
+// __proto__ consegue herdar os atributos no qual o objeto foi definido
 console.log(filho.atributo1);
 
 //caso o atributo não exista em nenhum dos objetos (filho, pai, avô e Object.Prototype), o resultado será undefined
@@ -21,6 +21,23 @@ console.log(filho.atributo3);
 const carro = {
   velAtual: 0,
   velMax: 200,
-  acelerarMais(delta) {},
+  acelerarMais(delta) {
+    if (this.velAtual + delta <= this.velMax) {
+      velAtual += delta;
+    } else {
+      this.velAtual = this.velMax;
+    }
+  },
+  status() {
+    return `${this.velAtual}KM/h de ${this.velMax}Km/h`;
+  },
 };
 
+const ferrari = {
+  modelo: "F40",
+  velMax: 324, // shadowing
+};
+
+const volvo = {
+  modelo: "V40",
+};
