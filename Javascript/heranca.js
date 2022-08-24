@@ -21,7 +21,10 @@ console.log(filho.atributo3);
 const carro = {
   velAtual: 0,
   velMax: 200,
-  acelerarMais(delta){
-    
-  }
+  acelerarMais(delta) {},
+};
+
+const lol = {
+  personagens: 165,
+  tudoRoubado: "Só na mão dos outros!",
 };
