@@ -35,6 +35,7 @@ console.log(p2.getPrecoComDesconto());
 console.log(p1.nome);
 console.log(p2.preco, p2.desconto + ", Porque também sou privado.");
 
+//by factory function
 function criarFuncionario(nome, salarioBase, faltas) {
   return {
     nome,
