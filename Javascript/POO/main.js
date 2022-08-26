@@ -27,3 +27,4 @@ Jefferson.mostrarNomeCompleto();
 console.log(Jefferson);
 
 //Métodos estaticos são chamados com a classe global, e não com seus atributos
+//addig
