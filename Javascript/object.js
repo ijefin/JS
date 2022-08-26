@@ -10,3 +10,4 @@ console.log(typeof Produto);
 console.log(typeof new Produto());
 
 //Objeto é uma coleção dinamica de pares chave/valor
+//a 
