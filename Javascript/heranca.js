@@ -1,12 +1,12 @@
 //cadeia de protótipos (prototype chain)
 
-Object.prototype.GlobalAtribute = "Eu sou o global.";
+Object.prototype.GlobalAtribute = "Eu sou o global."; //não fazer isso
 //O primeiro objeto definido, sem a utilização de proto, aponta para Object.Prototype
-const avo = { atributo1: "A" };
-const pai = { __proto__: avo, atributo2: "B" };
-const filho = { __proto__: pai, atributo3: "C" };
+const avo = { atributo1: "A" }; //proto = obj.prototype
+const pai = { __proto__: avo, atributo2: "B" }; //proto = avo
+const filho = { __proto__: pai, atributo3: "C" }; //proto = pai
 // __proto__ consegue herdar os atributos no qual o objeto foi definido
-console.log(filho.atributo1);
+console.log("filho", filho.atributo1);
 
 //caso o atributo não exista em nenhum dos objetos (filho, pai, avô e Object.Prototype), o resultado será undefined
 console.log(filho.atributo0);
@@ -23,7 +23,7 @@ const carro = {
   velMax: 200,
   acelerarMais(delta) {
     if (this.velAtual + delta <= this.velMax) {
-      velAtual += delta;
+      this.velAtual += delta;
     } else {
       this.velAtual = this.velMax;
     }
@@ -40,4 +40,25 @@ const ferrari = {
 
 const volvo = {
   modelo: "V40",
+  status() {
+    return `${this.modelo}: ${super.status()}`; //super para referênciar o prototipo
+  },
 };
+
+Object.setPrototypeOf(ferrari, carro); //ferrari tem carro como seu prototipo
+Object.setPrototypeOf(volvo, carro); //ferrari tem carro como seu prototipo
+console.log(ferrari);
+console.log(volvo);
+
+volvo.acelerarMais(340);
+console.log(volvo.status());
+
+ferrari.acelerarMais(340);
+console.log(ferrari.status());
+
+// console.log(ferrari.__proto__);
+// console.log(ferrari.__proto__ === Object.prototype); // true pois ferrari aponta para Object.prototype
+
+// console.log(volvo.__protp__ === Object.prototype); // true
+// //Object.prototype não tem um objeto mais alto que ele
+// console.log(Object.prototype.__proto__);
