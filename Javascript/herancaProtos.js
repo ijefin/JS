@@ -14,5 +14,5 @@ meuObjeto.prototype.falar = function () {
 };
 
 obj1.falar();
-obj2.nome = "Jefff";
+obj2.nome = "Jeff";
 obj2.falar();
