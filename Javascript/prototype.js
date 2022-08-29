@@ -15,7 +15,7 @@ const { nome, videoId } = javascript;
 console.log(`${nome} aulas de Javascript, ${videoId}`);
 
 //simulando o new
-function novo(f, ...params) {
+function novo(f, ...params) { // ...
   const obj = {};
   obj.__proto__ = f.prototype;
   f.apply(obj, params);
@@ -23,3 +23,4 @@ function novo(f, ...params) {
 }
 
 const aula3 = novo(Aula, "Bem vindo", 123);
+
