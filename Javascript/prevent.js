@@ -2,7 +2,7 @@
 
 //criando um novo objeto
 const produto = Object.preventExtensions({
-  noeme: "Qualquer",
+  nome: "Qualquer",
   preco: 1.99,
   tag: "Promoção",
 });
@@ -51,8 +51,6 @@ const meuObjComCreate = Object.create(pessoa, {
 
 console.log(meuObjComCreate);
 
-//O método Object.create() cria um novo objeto, utilizando um outro objeto existente como protótipo para o novo objeto a ser criado.
-
 function Configs(pvpOn, difficulty, texturePack, friendlyFire) {
   this.pvpOn = pvpOn;
   this.difficulty = difficulty;
@@ -65,5 +63,27 @@ console.log(minecraft);
 const counterStrike = new Configs(true, "Online-Mode", "GlobalTexture", true);
 console.log(counterStrike);
 
+//O método Object.create() cria um novo objeto, utilizando um outro objeto existente como protótipo para o novo objeto a ser criado.
+
+const validator = {
+  isElegible: "teste",
+};
+
 // Para entender o método Object.create, lembre-se apenas de que ele recebe dois parâmetros.
-const lifeLeaf = Object.create(Configs, {});
+const lifeLeaf = Object.create(validator, [
+  {
+    properties: {
+      nome: "LifeLeaf, The Game",
+      lancamento: "02/10/1999",
+    },
+  },
+]);
+
+console.log(lifeLeaf.__proto__);
+
+const objOrg = { empresa: "ABC Corp" };
+
+const funcionario = Object.create(objOrg, { nome: { valor: "FuncionarioUm" } });
+
+console.log(funcionario.__proto__); // { empresa: "ABC Corp" }
+console.log(funcionario.nome.valor); // "FuncionarioUm"
