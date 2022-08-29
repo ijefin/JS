@@ -62,3 +62,8 @@ console.log(ferrari.status());
 // console.log(volvo.__protp__ === Object.prototype); // true
 // //Object.prototype não tem um objeto mais alto que ele
 // console.log(Object.prototype.__proto__);
+
+console.log(Object.prototype);
+
+const avo2 = { __proto__: (corDePele = "Branco") };
+console.log(avo2.prototype);

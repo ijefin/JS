@@ -70,16 +70,15 @@ const validator = {
 };
 
 // Para entender o método Object.create, lembre-se apenas de que ele recebe dois parâmetros.
-const lifeLeaf = Object.create(validator, [
-  {
-    properties: {
-      nome: "LifeLeaf, The Game",
-      lancamento: "02/10/1999",
-    },
+const lifeLeaf = Object.create(validator, {
+  properties: {
+    nome: "LifeLeaf, The Game",
+    lancamento: "02/10/1999",
   },
-]);
+});
 
 console.log(lifeLeaf.__proto__);
+console.log(lifeLeaf.properties);
 
 const objOrg = { empresa: "ABC Corp" };
 
@@ -87,3 +86,5 @@ const funcionario = Object.create(objOrg, { nome: { valor: "FuncionarioUm" } });
 
 console.log(funcionario.__proto__); // { empresa: "ABC Corp" }
 console.log(funcionario.nome.valor); // "FuncionarioUm"
+
+console.log(this);
