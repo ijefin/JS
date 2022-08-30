@@ -7,7 +7,37 @@ const produto = Object.preventExtensions({
   tag: "Promoção",
 });
 
-console.log();
+console.log("Extensível:", Object.isExtensible(produto));
+
+produto.nome = "borracha";
+// produto.novoAtributo = "novo atributo :3"; //não surtirá efeito pois o objeto não é extensível
+delete produto.tag;
+console.log(produto);
+
+//object.seal
+//Consigo alterar os valores, mas não consigo adicionar nem excluir valores.
+
+const pessoaSeal = { nome: "Ju", idade: 25 };
+Object.seal(pessoaSeal);
+console.log("Está selado:", Object.isSealed(pessoaSeal));
+pessoaSeal.nome = "jeff";
+delete pessoaSeal.nome;
+pessoaSeal.bora = "tomar uma";
+
+// object.freeze
+//torna o objeto completamente constante.
+
+const joguinhosDePc = {
+  nome: "counterStrike",
+  lancamento: 1998,
+  genero: "fps",
+};
+
+Object.freeze(joguinhosDePc);
+console.log("Freezado:", Object.isFrozen(joguinhosDePc));
+joguinhosDePc.nome = "Lol";
+delete joguinhosDePc.genero;
+joguinhosDePc.possuiAntiCheat = true;
 
 //sintaxe literal
 
