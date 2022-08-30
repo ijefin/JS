@@ -13,7 +13,7 @@ listagem("Pedro", "Maria", "João", "Marcus", "Tiago");
 // Na lista estão: Pedro, Maria. Os demais são: João, Marcus, Tiago.
 
 // spread
-// contatenando 2 arrays sem o método concat
+// concatenando 2 arrays sem o método concat
 
 const pessoas = ["Pedro", "Maria", "João"];
 
