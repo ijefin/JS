@@ -10,7 +10,6 @@ console.log(pilotos.length);
 pilotos.push("Verstappen");
 console.log(pilotos);
 console.log(pilotos.length);
-
 // SHIFT, REMOVE O PRIMEIRO ELEMENTO DA LISTA
 pilotos.shift();
 console.log(pilotos);
