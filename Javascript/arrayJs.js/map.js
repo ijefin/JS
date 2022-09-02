@@ -1,1 +1,1 @@
-//Map realiza uma tranerc
+//Map realiza uma transformação em de um array em outro.
