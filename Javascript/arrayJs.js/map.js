@@ -11,6 +11,4 @@ const soma10 = (e) => e + 10;
 console.log(soma10(20));
 
 //O método que passamos para um map, deve possuir um retorno explicito.
-
-const comMetodo = nums.map(soma10(nums));
-console.log(comMetodo);
+//Lets implement the map function!
