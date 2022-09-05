@@ -27,6 +27,7 @@ console.log(carrinhoEmJson);
 
 const data = JSON.parse(carrinhoEmJson);
 
-const filtrandoMeusDados = data.map((c) => console.log(c.preco));
+const filtrandoMeusDados = data.map((c) => c.preco);
+console.log(filtrandoMeusDados);
 
-
+//Implementação do professor
