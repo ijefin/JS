@@ -12,5 +12,7 @@ const soma10 = (e) => e + 10;
 const triplo = (e) => e * 3;
 const paraReal = (e) => `R$ ${parseFloat(e).toFixed(2).replace(".", ",")}`;
 
-resultado = otherNums.map(soma10).map(triplo).map(paraReal);
+const resultado = otherNums.map(soma10).map(triplo).map(paraReal);
 console.log(resultado);
+
+
