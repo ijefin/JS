@@ -7,5 +7,6 @@ const produtos = [
   { nome: "Monitor Gamer Mancer ", preco: "1845.90", fragil: false },
 ];
 
+//filter realiza uma validação com base no teste que o usuário desejar que seja verdadeiro ou falso.
 const filtroFalso = produtos.filter((c) => c.fragil === false);
 console.log(filtroFalso);
