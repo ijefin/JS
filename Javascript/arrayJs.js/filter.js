@@ -12,9 +12,8 @@ const filtroFalso = produtos.filter((c) => c.fragil === false);
 // console.log(filtroFalso);
 
 const filtraCaros = (produto) => produto.preco >= 400;
-const verificaFragil = (produto) => produto.fragil === true;
+const verificaFragil = (produto) => produto.fragil;
 
 const resultado = produtos.filter(filtraCaros).filter(verificaFragil);
 
 console.log({ resultado });
-console.log({ produtos });
