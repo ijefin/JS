@@ -23,11 +23,9 @@ const carrinhoEmJson = JSON.stringify(carrinho);
 
 console.log(carrinhoEmJson);
 
-//convertendo o json para objeto::
+// convertendo o json para objeto:
 
 const data = JSON.parse(carrinhoEmJson);
 
 const filtrandoMeusDados = data.map((c) => c.preco);
 console.log(filtrandoMeusDados);
-
-
