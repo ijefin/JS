@@ -9,4 +9,12 @@ const produtos = [
 
 //filter realiza uma validação com base no teste que o usuário desejar que seja verdadeiro ou falso.
 const filtroFalso = produtos.filter((c) => c.fragil === false);
-console.log(filtroFalso);
+// console.log(filtroFalso);
+
+const filtraCaros = (produto) => produto.preco >= 400;
+const verificaFragil = (produto) => produto.fragil === true;
+
+const resultado = produtos.filter(filtraCaros).filter(verificaFragil);
+
+console.log({ resultado });
+console.log({ produtos });

@@ -14,5 +14,3 @@ const paraReal = (e) => `R$ ${parseFloat(e).toFixed(2).replace(".", ",")}`;
 
 const resultado = otherNums.map(soma10).map(triplo).map(paraReal);
 console.log(resultado);
-
-
