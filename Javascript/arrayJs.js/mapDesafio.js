@@ -1,6 +1,6 @@
 // cria uma função que gera um objeto e depois o transforme em um json
 
-function constroiObjeto(nome, preco, carrinho = []) {
+function constroiObjeto(nome, preco) {
   return {
     nome,
     preco,
