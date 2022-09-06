@@ -9,6 +9,12 @@ const produtos = [
 //possui 2 parametros no qual podemos realizar operações. Math como no exemplo abaixo.
 const somaTotalEstoque = produtos
   .map((c) => c.preco)
-  .reduce((prevent, current) => prevent + current);
+  .reduce((prevent, current) => current + prevent);
 
 console.log(somaTotalEstoque);
+
+const pegaMaiorValor = produtos.map(c => c.preco).reduce((prevent, current) =>
+  Math.max(prevent, current)
+);
+
+console.log(pegaMaiorValor);
