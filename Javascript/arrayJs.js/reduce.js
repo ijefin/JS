@@ -13,8 +13,9 @@ const somaTotalEstoque = produtos
 
 console.log(somaTotalEstoque);
 
-const pegaMaiorValor = produtos.map(c => c.preco).reduce((prevent, current) =>
-  Math.max(prevent, current)
-);
+const pegaMaiorValor = produtos
+  .map((c) => c.preco)
+  .reduce((prevent, current) => Math.max(prevent, current));
 
 console.log(pegaMaiorValor);
+//:c
