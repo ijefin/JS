@@ -23,4 +23,3 @@ jogos.forEach(function (nome, indice, array) {
   console.log(nome, indice, array);
 });
 
-//só verdinhos!
