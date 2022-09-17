@@ -46,25 +46,6 @@ function solucao(media, frequencia, projetoFinal) {
 }
 
 solucao(80, 74, 78);
-
-function purrinha(jogador1, jogador2, qtdTampinha) {
-  if (
-    jogador1 === jogador2 ||
-    jogador1 + jogador2 > 6 ||
-    jogador1 + jogador2 < 0
-  ) {
-    console.log("PALPITE INVALIDO");
-  } else if (jogador1 === qtdTampinha) {
-    console.log("JOGADOR 1 GANHOU");
-  } else if (jogador2 === qtdTampinha) {
-    console.log("JOGADOR 2 GANHOU");
-  } else if (jogador2 === qtdTampinha && jogador1 === qtdTampinha) {
-    console.log("Empate");
-  }
-}
-
-purrinha(3, 3, 0);
-
 // PALPITE INVALIDO caso tenha dois pedidos iguais;
 // ABSURDO caso algum jogador tenha feito um palpite maior que o maior número possível de tampinhas em jogo, que seriam 6 (3 de cada jogador);
 // JOGADOR 1 GANHOU se o jogador 1 tiver ganhado;
