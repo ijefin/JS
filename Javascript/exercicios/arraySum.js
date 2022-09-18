@@ -1,7 +1,7 @@
-//we can use reduce to sum an array of number type.
+//we can use reduce to sum an array of numbers
 function simpleArraySum(ar) {
-  const totalSum = ar.reduce((prev, curr) => prev + curr);
-  console.log(totalSum);
+  const somaTotal = ar.reduce((somado, aSomar) => somado * aSomar);
+  console.log(somaTotal);
 }
 
 simpleArraySum([1, 2, 3, 4, 10, 11]);
