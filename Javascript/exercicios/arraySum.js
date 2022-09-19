@@ -1,6 +1,6 @@
 //we can use reduce to sum an array of numbers
 function simpleArraySum(ar) {
-  const somaTotal = ar.reduce((somado, aSomar) => somado * aSomar);
+  const somaTotal = ar.reduce((somado, aSomar) => somado + aSomar);
   console.log(somaTotal);
 }
 
