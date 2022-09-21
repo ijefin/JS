@@ -16,3 +16,4 @@ diagonalDifference([
   [4, 5, 6],
   [10, 8, -12],
 ]);
+//done!
