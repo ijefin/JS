@@ -3,10 +3,12 @@ function reverseValues(value) {
     ? console.log(!value)
     : typeof value === "number" && value > 0
     ? console.log(-value)
+    : typeof value === "number" && value < 0
+    ? console.log(Math.abs(value))
     : console.log("The value must be a boolean or a number ");
 }
 
-reverseValues(-5);
+reverseValues(-300);
 reverseValues(true);
 reverseValues(55);
 reverseValues(false);
