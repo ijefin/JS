@@ -15,3 +15,5 @@ reverseValues(false);
 reverseValues(555);
 reverseValues(true);
 reverseValues("Programação");
+reverseValues("Programação");
+reverseValues("Programação");
