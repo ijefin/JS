@@ -9,3 +9,7 @@ function letsRepeat(el, repeat) {
   console.log(`There is ${repeat} elements named ${el} `);
 }
 letsRepeat(5, 25);
+
+// function repetir(item, quantidade) {
+//   return Array(quantidade).fill(item);
+// }
