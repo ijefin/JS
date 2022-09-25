@@ -27,25 +27,45 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-
 .box {
-  width: 400px;
+  width: 90%;
   height: auto;
   background: #fff;
-  border-radius: 12px;
   position: relative;
-  border-radius: 12px;
+  border-radius: 45px;
 }
 
 #align-itens-in-box {
   margin: 5%;
-  font-size: 15px;
+  font-size: 30px;
 }
 
 .box img {
   width: 100%;
   margin: auto;
-  border-radius: 12px;
+  border-radius: 30px;
   position: relative;
 }
 
+@media (min-width: 600px) {
+  .box {
+    width: 400px;
+    height: auto;
+    background: #fff;
+    border-radius: 12px;
+    position: relative;
+    border-radius: 12px;
+  }
+
+  #align-itens-in-box {
+    margin: 5%;
+    font-size: 15px;
+  }
+
+  .box img {
+    width: 100%;
+    margin: auto;
+    border-radius: 12px;
+    position: relative;
+  }
+}
