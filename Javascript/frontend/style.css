@@ -21,51 +21,45 @@ h2 {
 .container {
   width: 100vw;
   height: 100vh;
-  background: #6c7a89;
+  background: #7cb3ef;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 .box {
-  width: 90%;
+  width: 400px;
   height: auto;
   background: #fff;
+  border-radius: 12px;
   position: relative;
-  border-radius: 45px;
+  border-radius: 12px;
 }
 
 #align-itens-in-box {
   margin: 5%;
-  font-size: 30px;
+  font-size: 15px;
 }
 
 .box img {
   width: 100%;
   margin: auto;
-  border-radius: 30px;
+  border-radius: 12px;
   position: relative;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 375px) {
   .box {
-    width: 400px;
-    height: auto;
+    width: 90%;
+    height: 80%;
     background: #fff;
     border-radius: 12px;
     position: relative;
     border-radius: 12px;
   }
-
   #align-itens-in-box {
     margin: 5%;
-    font-size: 15px;
-  }
-
-  .box img {
-    width: 100%;
-    margin: auto;
-    border-radius: 12px;
-    position: relative;
+    font-size: 14px;
   }
 }
