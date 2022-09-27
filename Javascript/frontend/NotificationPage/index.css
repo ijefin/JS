@@ -112,8 +112,13 @@ h2 {
   align-items: center;
 }
 
-#with-photo #commented-photo {
-  margin-top: 10px;
-  margin-left: 130px;
-  width: 35%;
+.with-photo {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.with-photo #commented-photo{
+  width: 30%;
 }
