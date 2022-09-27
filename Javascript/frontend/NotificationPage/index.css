@@ -24,7 +24,7 @@ h2 {
 #main-container {
   background-color: hsl(0, 0%, 100%);
   width: 35%;
-  height: 80%;
+  height: auto;
   border-radius: 12px;
   position: relative;
 }
@@ -60,14 +60,19 @@ h2 {
   border-radius: 6px;
   max-width: 150%;
   max-height: auto;
+
+  margin-bottom: 10px;
+}
+
+.notification-card-content {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
 }
 
 .notification-card img {
   max-width: 7%;
   margin: 12px 18px 12px 20px;
+  position: relative;
 }
 
 .notification-reaction {
@@ -79,6 +84,24 @@ h2 {
   font-weight: bolder;
 }
 
-.notification-time{
-  color: hsl(219, 13%, 53%);;
+.notification-time {
+  color: hsl(219, 13%, 53%);
+}
+
+.notification-chess-club {
+  color: rgb(12, 14, 134);
+  font-weight: bolder;
+}
+
+.notification-message {
+  margin: 12px 12px 12px 0px;
+  background-color: hsl(0, 0%, 100%);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: rgba(39, 36, 66, 0.259);
+  display: grid;
+  position: relative;
+  padding: 10px;
+  color: hsl(221, 14%, 44%);
 }
