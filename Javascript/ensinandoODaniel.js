@@ -5,7 +5,6 @@ function mostraPenis() {
 }
 
 function alteraCorDeFundo() {
-  debugger;
   const color = "black";
   document.getElementById("daniel").style.backgroundColor = color;
   alteraCorDeFonte();
