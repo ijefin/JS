@@ -15,3 +15,5 @@ firstAndLastEl([
     return console.log(a);
   },
 ]);
+
+//a
