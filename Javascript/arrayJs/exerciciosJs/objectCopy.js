@@ -1,10 +1,10 @@
 function removerPropriedade(objeto, nomeDaPropriedade) {
   const copia = Object.assign({}, objeto);
   delete copia[nomeDaPropriedade];
-  return copia;
+  return console.log(copia);
 }
 
-console.log(removerPropriedade({ abacate: 1, b: 2 }, "abacate"));
+Object.is(removerPropriedade({ abacate: 1, b: 2 }, "abacate"));
 
 const myObj = {
   nome: "Jeff",
