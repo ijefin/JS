@@ -1,19 +1,6 @@
 function firstAndLastEl(el) {
-  const firstAndLast = el.map((e) => e[0]);
-
-  return console.log(firstAndLast);
+  const firstEl = el[0];
+  const lastEl = el[el.length - 1];
+  return console.log([firstEl, lastEl]);
 }
-
-firstAndLastEl([
-  "cu",
-  1,
-  2,
-  543,
-  "negative, ",
-  "asdasdsa",
-  function (a) {
-    return console.log(a);
-  },
-]);
-
-//a
+firstAndLastEl([1, 2, 3, 4, 5, 6]);
