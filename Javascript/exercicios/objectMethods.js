@@ -29,7 +29,7 @@ console.log(Object.keys(pessoa));
 
 // Object.assign()
 
-//utilizo o assing para adicionar um atributo a um objeto . Bem utilizado para edição de um registro
+//utilizo o assign para adicionar um atributo a um objeto . Bem utilizado para edição de um registro
 const dest = { nome: "Jefferson" };
 const idade = { idade: 21 };
 const tamanhoDoPenis = { penis: 18 };
