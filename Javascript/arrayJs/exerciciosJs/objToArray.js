@@ -5,3 +5,4 @@ function objToArray(obj) {
 
 objToArray({ nome: "Jeff", idade: 23, profissao: "Programador" });
 // result [ [ 'nome', 'Jeff' ], [ 'idade', 23 ], [ 'profissao', 'Programador' ] ]
+
